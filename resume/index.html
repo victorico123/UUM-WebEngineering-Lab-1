@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            window.addEventListener('scroll', function() {
+                var brand = document.getElementById("brand");
+                if (window.scrollY > 50) {
+                    document.getElementById('navbar_top').classList.add('fixed-top');
+                    document.getElementById("navbar_ul").classList.remove('mx-auto');
+                    navbar_height = document.querySelector('.navbar').offsetHeight;
+                    document.body.style.paddingTop = navbar_height + 'px';
+                    brand.textContent = "Juanrico Alvaro";
+                } else {
+                    // console.log("asd");
+                    brand.textContent = "";
+                    document.getElementById('navbar_top').classList.remove('fixed-top');
+                    document.getElementById("navbar_ul").classList.add('mx-auto');
+                    document.body.style.paddingTop = '0';
+                } 
+            });
+        });
+
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .navbar.center .navbar-inner {
+            text-align: center;
+        }
+
+        .navbar.center .navbar-inner .nav {
+            display:inline-block;
+            float: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="top_div" class="bg-dark py-2 align-items-center text-light text-center"> 
+         <h1>Resume of Juanrico Alvaro</h1>
+        </div>
+        <nav id="navbar_top" class="navbar navbar-dark bg-dark navbar-expand-md px-4">
+            <a href="#" id="brand"class="navbar-brand"></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse navbar-inner" id="navbar">
+                <ul id="navbar_ul" class="navbar-nav center mx-auto">
+                    <li class="nav-item mx-2"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item mx-2"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item mx-2"><a href="#achievement" class="nav-link">Background</a></li>
+                    <li class="nav-item mx-2"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item mx-2"><a href="#contact" class="nav-link">Training</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="text-light" style="margin: 5em 10em 75px;"> 
+    
+            <div id="profile" >
+                <table style="width: 50% !important; margin: auto;">
+                    <tr>
+                        <th rowspan="2" class="col-2">
+                            <img src="assets/images/profile.jpg" class="rounded img-thumbnail" alt="profile image">
+                        </th>
+                        <th class="col-3 px-3" style="font-size: 2.5vw;">Juanrico Alvaro</th>
+                    </tr>
+                    <tr>
+                        <td class="col-3 px-3" style="font-size: 2vw;">
+                            Computer Science Student
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+        <div class="my-5">
+            <div class="education">
+                <h4><b>Education</b></h4>
+
+            </div>
+        </div>
+
+
+    </main>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer class="bg-dark fixed-bottom text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <p class="text-light" style="display: inline-block;">&copy; 2022 Copyright:</p>
+            <a class="text-light" href="#contact">Juanrico Alvaro</a>
+        </div>
+    </footer>
+</body>
+</html>
