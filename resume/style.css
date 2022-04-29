@@ -18,7 +18,18 @@ body{
     background-size: cover;
   }
 
-  canvas#horizontalBarChartCanvas {
-    max-width: 768px;
-    margin: 40px auto;
+  .multi{
+    text-align:justify;
+  column-count: 3;
+  column-gap: 40px;
+  }
+
+  .education table tr td,th{
+    padding: 2em 0px;
+    text-align:justify;
+  }
+
+  .education table tr th{
+    padding: 2em;
+    text-align:center;
   }
