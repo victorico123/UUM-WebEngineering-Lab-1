@@ -20,7 +20,7 @@ body{
 
   .multi{
     text-align:justify;
-  column-count: 3;
+  column-count: 2;
   column-gap: 40px;
   }
 
@@ -33,3 +33,19 @@ body{
     padding: 2em;
     text-align:center;
   }
+
+  .my-anchor{
+    top: -75px;
+    position: relative;
+  }
+
+  .flex-row-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-row-container > .flex-row-item {
+    flex: 1 1 30%; /*grow | shrink | basis */
+    margin: 0 2em;
+    height: 100px;
+}
